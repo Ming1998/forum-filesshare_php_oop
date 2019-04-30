@@ -53,7 +53,7 @@ echo '<ol id="replies" class="list-group">';
     echo '<strong>'.$row1['guest'].'</strong>';
     echo $row1['contact'];
     echo '<a href="reply_delete.php?reply_id='.$row1['reply_id'].'&post_id='.$_GET['post_id'].'" class="badge badge-danger">删除</a><br/>';
-    echo '<small>'.date('j-M-Y g:ia', $row1['date']).'</small><br/>';
+    echo '<small>'.date($row1['date']).'</small><br/>';
     echo nl2br($row1['content']);
     echo '</li>';
  }
